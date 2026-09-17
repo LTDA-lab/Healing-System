@@ -145,13 +145,13 @@ HUD text
 
 
 
-Recommended Gameplay: Higher HP + Manual Healing
+❤️ Recommended Gameplay: Higher HP + Manual Healing
 
 For servers looking for a different gameplay experience, I also recommend combining this healing system with a higher maximum HP than the default 100 HP.
 
 For example, using:
 
-120, 130 Max 150, 160 HP
+150 HP maximum
 Manual healing with the F key
 Progressive health regeneration while healing
 
@@ -173,7 +173,7 @@ However, this is not intended to turn BO2 into Warzone. The goal is simply to ex
 
 In my own testing, I found that the combination of higher HP + manual healing creates a noticeably different gameplay experience, especially because fights can develop into longer pursuits rather than ending immediately after the first exchange.
 
-If you want to experiment with this concept, I recommend starting around 120, 130 Max 150, 160 HP and adjusting the healing rate and cooldown according to your server's gameplay.
+If you want to experiment with this concept, I recommend starting around 150 HP and adjusting the healing rate and cooldown according to your server's gameplay.
 
 
 
