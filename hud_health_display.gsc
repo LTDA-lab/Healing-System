@@ -1,7 +1,7 @@
 init()
 {
     level.hpDisplayThread = thread displayHPPercentageHUD();
-    thread cleanupUnusedHUDs(); // limpieza de respaldo
+    thread cleanupUnusedHUDs();
 }
 
 displayHPPercentageHUD()
@@ -9,6 +9,7 @@ displayHPPercentageHUD()
     for(;;)
     {
         players = getEntArray("player", "classname");
+
         for(i = 0; i < players.size; i++)
         {
             player = players[i];
@@ -33,23 +34,25 @@ displayHPPercentageHUD()
                 player thread onPlayerDeath();
             }
 
-            // Obtener vida
+            // Obtener vida real
             health = player.health;
+
             if (!isDefined(health))
                 continue;
 
             roundedHP = int((health + 5) / 10) * 10;
-            if (roundedHP > 100)
-                roundedHP = 100;
+
+            // Ya NO se limita a 100
+
             if (roundedHP < 0)
                 roundedHP = 0;
 
             if (roundedHP > 50)
-                color = (1, 1, 1); // Verde
+                color = (1, 1, 1);
             else if (roundedHP > 25)
-                color = (1, 1, 0); // Amarillo
+                color = (1, 1, 0);
             else
-                color = (1, 0, 0); // Rojo
+                color = (1, 0, 0);
 
             player.hpText.color = color;
 
@@ -67,6 +70,7 @@ displayHPPercentageHUD()
 
             player.hpText setText(colorCode + "HP: " + displayHP);
         }
+
         wait 0.5;
     }
 }
@@ -74,6 +78,7 @@ displayHPPercentageHUD()
 onPlayerDeath()
 {
     self waittill("death");
+
     if (isDefined(self.hpText))
     {
         self.hpText destroy();
@@ -95,15 +100,18 @@ cleanupUnusedHUDs()
     for (;;)
     {
         players = getEntArray("player", "classname");
+
         for (i = 0; i < players.size; i++)
         {
             player = players[i];
+
             if (isDefined(player.hpText) && !isAlive(player))
             {
                 player.hpText destroy();
                 player.hpText = undefined;
             }
         }
+
         wait 10;
     }
 }
