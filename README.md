@@ -143,6 +143,41 @@ HUD position
 HUD colors
 HUD text
 
+
+
+Recommended Gameplay: Higher HP + Manual Healing
+
+For servers looking for a different gameplay experience, I also recommend combining this healing system with a higher maximum HP than the default 100 HP.
+
+For example, using:
+
+120, 130 Max 150, 160 HP
+Manual healing with the F key
+Progressive health regeneration while healing
+
+The idea is to create longer and more dynamic engagements without changing the original BO2 weapons, maps, movement, or overall gameplay.
+
+With the standard 100 HP, many gunfights can end very quickly. Increasing the maximum HP gives players more time to react, disengage, escape, pursue an opponent, or turn a fight around.
+
+Combined with manual healing, this creates more opportunities for:
+
+🏃 Longer chases and escapes
+🔫 Extended gunfights
+🔄 Re-engaging after taking damage
+🩹 Recovering before returning to combat
+🎯 More opportunities for tactical decisions during fights
+
+This is inspired by the type of gameplay found in newer Call of Duty experiences, where players can have greater effective survivability and recover from damage before re-engaging.
+
+However, this is not intended to turn BO2 into Warzone. The goal is simply to experiment with the idea of bringing a small part of that gameplay style into T6 Multiplayer, while keeping the original BO2 weapons, maps and movement.
+
+In my own testing, I found that the combination of higher HP + manual healing creates a noticeably different gameplay experience, especially because fights can develop into longer pursuits rather than ending immediately after the first exchange.
+
+If you want to experiment with this concept, I recommend starting around 120, 130 Max 150, 160 HP and adjusting the healing rate and cooldown according to your server's gameplay.
+
+
+
+
 Feel free to modify the scripts to fit your server's gameplay.
 
 Credits
