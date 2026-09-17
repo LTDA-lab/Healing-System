@@ -1,10 +1,3 @@
-// Fast Heal Script para Plutonium T6 MP (Con avisos HUD y cooldown por curación rápida)
-// Al mantener presionada la tecla F (usebuttonpressed), el jugador se cura con manos vacías.
-// Bloquea mediante disableusability() y disableweapons() que el juego adjunte automáticamente el maletín/bomba en Killcam.
-// El cooldown de 5 segundos se activa ÚNICAMENTE si el jugador se cura 2 veces seguidas en menos de 3 segundos entre uso y uso.
-// Si transcurren más de 3 segundos entre curaciones, no se activa el cooldown y puede volver a curarse.
-// Incluye avisos HUD personalizados colocados arriba del HUD de HP existente (x = -40, y = 35).
-
 #include maps\mp\_utility;
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
