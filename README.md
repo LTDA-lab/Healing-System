@@ -1,3 +1,14 @@
+
+fast_heal.gsc: displays an animation when healing.
+
+fast_heal_hands_only.gsc: does not display an animation when healing (hands appear empty).
+
+hud_health_display.gsc: displays the actual HP configured in your gametype files.
+
+hud_health_display_max_HP_100.gsc: displays the maximum HP as 100.
+
+
+
 T6 MP – HP HUD & Healing System
 
 Two GSC scripts for Plutonium T6 Multiplayer that add a custom player HP HUD and a manual healing system.
