@@ -11,7 +11,9 @@ hud_health_display_max_HP_100.gsc: displays the maximum HP as 100.
 
 .................................................................................................................................................................................................................................................................................
 
-T6 MP – HP HUD & Healing System
+
+
+T6 MP – HP HUD & Healing System:
 
 Two GSC scripts for Plutonium T6 Multiplayer that add a custom player HP HUD and a manual healing system.
 
