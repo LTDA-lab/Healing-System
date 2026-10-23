@@ -55,7 +55,7 @@ monitor_damage_hud()
         // Si no está en cooldown, ni curándose, y necesita curación, mostrar aviso durante 1 segundo
         if ( (!isdefined( self.heal_cooldown ) || !self.heal_cooldown) && (!isdefined( self.is_healing ) || !self.is_healing) )
         {
-            self thread show_temp_heal_prompt( "^1Press [F] to Heal", 1.0 );
+            self thread show_temp_heal_prompt( "^1Press [F] to Heal", 4.0 );
         }
     }
 }
@@ -71,7 +71,7 @@ show_temp_heal_prompt( text_msg, duration )
 
     if ( !isdefined( self.heal_hud_text ) )
     {
-        self.heal_hud_text = self maps\mp\gametypes\_hud_util::createfontstring( "small", 1.0 );
+        self.heal_hud_text = self maps\mp\gametypes\_hud_util::createfontstring( "small", 1.2 );
         self.heal_hud_text.alignX = "left";
         self.heal_hud_text.alignY = "middle";
         self.heal_hud_text.horzAlign = "left";
@@ -219,7 +219,7 @@ start_heal_cooldown( duration )
 
     if ( !isdefined( self.heal_hud_text ) )
     {
-        self.heal_hud_text = self maps\mp\gametypes\_hud_util::createfontstring( "small", 1.0 );
+        self.heal_hud_text = self maps\mp\gametypes\_hud_util::createfontstring( "small", 1.2 );
         self.heal_hud_text.alignX = "left";
         self.heal_hud_text.alignY = "middle";
         self.heal_hud_text.horzAlign = "left";
